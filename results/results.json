@@ -1,0 +1,2118 @@
+{
+ "config": {
+  "seeds": 20,
+  "n_steps": 100000
+ },
+ "summary": {
+  "baseline": {
+   "truth": {
+    "filled_qty": [
+     5532.45,
+     173.92571765888417
+    ],
+    "fill_rate_per_order": [
+     0.27738326967639887,
+     0.006480052699673866
+    ],
+    "pnl": [
+     4648.225,
+     263.9553628033187
+    ],
+    "orders_placed": [
+     11022.25,
+     111.14043984266506
+    ]
+   },
+   "models": {
+    "naive_touch": {
+     "filled_qty": [
+      8216.3,
+      191.34320226397273
+     ],
+     "fill_error_pct": [
+      48.55702272040982,
+      2.10315744245627
+     ],
+     "mae_qty_per_order": [
+      0.24349318951387208,
+      0.006693638974272206
+     ],
+     "overfill_qty": [
+      2683.85,
+      78.57297982064023
+     ],
+     "underfill_qty": [
+      0,
+      0.0
+     ],
+     "fill_rate_per_order": [
+      0.40659798403052105,
+      0.005740044278324752
+     ],
+     "pnl_error": [
+      1803.25,
+      6303.677780929913
+     ]
+    },
+    "queue_pessimistic": {
+     "filled_qty": [
+      5500.3,
+      171.11925666037706
+     ],
+     "fill_error_pct": [
+      -0.5801078399754055,
+      0.10976880264271256
+     ],
+     "mae_qty_per_order": [
+      0.002915545160951046,
+      0.0005752767894603384
+     ],
+     "overfill_qty": [
+      0,
+      0.0
+     ],
+     "underfill_qty": [
+      32.15,
+      6.4094913173643056
+     ],
+     "fill_rate_per_order": [
+      0.2749073710758626,
+      0.0062923762942543315
+     ],
+     "pnl_error": [
+      -9.625,
+      350.3768976327304
+     ]
+    },
+    "queue_proportional": {
+     "filled_qty": [
+      5527.85,
+      172.52834244659172
+     ],
+     "fill_error_pct": [
+      -0.08230237363923842,
+      0.17933462912058645
+     ],
+     "mae_qty_per_order": [
+      0.004471403634061344,
+      0.0006490383417346605
+     ],
+     "overfill_qty": [
+      22.35,
+      6.714281714924421
+     ],
+     "underfill_qty": [
+      26.95,
+      5.6333125713309915
+     ],
+     "fill_rate_per_order": [
+      0.27631773559229206,
+      0.006376126425333421
+     ],
+     "pnl_error": [
+      175.55,
+      560.866010361608
+     ]
+    }
+   }
+  },
+  "no_informed_flow": {
+   "truth": {
+    "filled_qty": [
+     5566.65,
+     164.4327650151463
+    ],
+    "fill_rate_per_order": [
+     0.2792293105436121,
+     0.005636090994473909
+    ],
+    "pnl": [
+     5043.675,
+     338.9978370913767
+    ],
+    "orders_placed": [
+     11019.65,
+     105.41610533100668
+    ]
+   },
+   "models": {
+    "naive_touch": {
+     "filled_qty": [
+      8255.4,
+      170.97626797461194
+     ],
+     "fill_error_pct": [
+      48.345646320240355,
+      2.073433605267783
+     ],
+     "mae_qty_per_order": [
+      0.24401133408399148,
+      0.006980423955750592
+     ],
+     "overfill_qty": [
+      2688.75,
+      74.82954313849437
+     ],
+     "underfill_qty": [
+      0,
+      0.0
+     ],
+     "fill_rate_per_order": [
+      0.40854729378998617,
+      0.005051617829933232
+     ],
+     "pnl_error": [
+      3978.725,
+      6148.453373078554
+     ]
+    },
+    "queue_pessimistic": {
+     "filled_qty": [
+      5529.3,
+      165.32682146202666
+     ],
+     "fill_error_pct": [
+      -0.671888349547543,
+      0.11761970659733786
+     ],
+     "mae_qty_per_order": [
+      0.0033905214685740807,
+      0.0005767170561011588
+     ],
+     "overfill_qty": [
+      0,
+      0.0
+     ],
+     "underfill_qty": [
+      37.35,
+      6.259939464983919
+     ],
+     "fill_rate_per_order": [
+      0.27638354375050267,
+      0.005653216863271061
+     ],
+     "pnl_error": [
+      56.025,
+      629.8594971771169
+     ]
+    },
+    "queue_proportional": {
+     "filled_qty": [
+      5557.65,
+      164.47693007323485
+     ],
+     "fill_error_pct": [
+      -0.1618157646268417,
+      0.0820300320939134
+     ],
+     "mae_qty_per_order": [
+      0.004883533405798409,
+      0.000802899335953588
+     ],
+     "overfill_qty": [
+      22.4,
+      4.849308143816415
+     ],
+     "underfill_qty": [
+      31.4,
+      5.019960159204453
+     ],
+     "fill_rate_per_order": [
+      0.2778896818165387,
+      0.0056934736108307776
+     ],
+     "pnl_error": [
+      175.45,
+      755.9734731491993
+     ]
+    }
+   }
+  }
+ },
+ "per_seed": {
+  "baseline": [
+   {
+    "seed": 0,
+    "mid_final": 1030.0,
+    "orders_placed": 11010,
+    "orders_rejected_post_only": 29,
+    "truth": {
+     "filled_qty": 5469,
+     "buy_qty": 2735,
+     "sell_qty": 2734,
+     "fill_events": 3503,
+     "fill_rate_per_order": 0.2759309718437784,
+     "inventory": 1,
+     "pnl": 4147.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8252,
+      "fill_error_pct": 50.88681660266959,
+      "overfill_qty": 2783,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.2527702089009991,
+      "fill_rate_per_order": 0.4097184377838329,
+      "pnl": 3593.0,
+      "pnl_error": -554.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5439,
+      "fill_error_pct": -0.5485463521667581,
+      "overfill_qty": 0,
+      "underfill_qty": 30,
+      "mae_qty_per_order": 0.0027247956403269754,
+      "fill_rate_per_order": 0.2735694822888283,
+      "pnl": 4355.0,
+      "pnl_error": 208.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5462,
+      "fill_error_pct": -0.12799414883891022,
+      "overfill_qty": 17,
+      "underfill_qty": 24,
+      "mae_qty_per_order": 0.003723887375113533,
+      "fill_rate_per_order": 0.27465940054495913,
+      "pnl": 4515.0,
+      "pnl_error": 368.0
+     }
+    }
+   },
+   {
+    "seed": 1,
+    "mid_final": 997.0,
+    "orders_placed": 10885,
+    "orders_rejected_post_only": 33,
+    "truth": {
+     "filled_qty": 5380,
+     "buy_qty": 2691,
+     "sell_qty": 2689,
+     "fill_events": 3411,
+     "fill_rate_per_order": 0.2734037666513551,
+     "inventory": 2,
+     "pnl": 4954.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 7860,
+      "fill_error_pct": 46.09665427509294,
+      "overfill_qty": 2480,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.22783647220946257,
+      "fill_rate_per_order": 0.3958658704639412,
+      "pnl": 7813.0,
+      "pnl_error": 2859.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5344,
+      "fill_error_pct": -0.6691449814126395,
+      "overfill_qty": 0,
+      "underfill_qty": 36,
+      "mae_qty_per_order": 0.003307303628847037,
+      "fill_rate_per_order": 0.2703720716582453,
+      "pnl": 5206.0,
+      "pnl_error": 252.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5364,
+      "fill_error_pct": -0.29739776951672864,
+      "overfill_qty": 15,
+      "underfill_qty": 31,
+      "mae_qty_per_order": 0.0042259990813045475,
+      "fill_rate_per_order": 0.2714745062011943,
+      "pnl": 4936.0,
+      "pnl_error": -18.0
+     }
+    }
+   },
+   {
+    "seed": 2,
+    "mid_final": 826.0,
+    "orders_placed": 11055,
+    "orders_rejected_post_only": 35,
+    "truth": {
+     "filled_qty": 5626,
+     "buy_qty": 2813,
+     "sell_qty": 2813,
+     "fill_events": 3592,
+     "fill_rate_per_order": 0.2824061510628675,
+     "inventory": 0,
+     "pnl": 4658.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8321,
+      "fill_error_pct": 47.90259509420547,
+      "overfill_qty": 2695,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24378109452736318,
+      "fill_rate_per_order": 0.41121664405246494,
+      "pnl": -6093.0,
+      "pnl_error": -10751.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5586,
+      "fill_error_pct": -0.7109847138286527,
+      "overfill_qty": 0,
+      "underfill_qty": 40,
+      "mae_qty_per_order": 0.003618272274988693,
+      "fill_rate_per_order": 0.27951153324287653,
+      "pnl": 5379.0,
+      "pnl_error": 721.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5604,
+      "fill_error_pct": -0.391041592605759,
+      "overfill_qty": 13,
+      "underfill_qty": 35,
+      "mae_qty_per_order": 0.004341926729986432,
+      "fill_rate_per_order": 0.2804161013116237,
+      "pnl": 5408.0,
+      "pnl_error": 750.0
+     }
+    }
+   },
+   {
+    "seed": 3,
+    "mid_final": 1316.0,
+    "orders_placed": 11149,
+    "orders_rejected_post_only": 32,
+    "truth": {
+     "filled_qty": 5635,
+     "buy_qty": 2818,
+     "sell_qty": 2817,
+     "fill_events": 3608,
+     "fill_rate_per_order": 0.2815499147905642,
+     "inventory": 1,
+     "pnl": 4715.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8329,
+      "fill_error_pct": 47.808340727595386,
+      "overfill_qty": 2694,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24163602116781774,
+      "fill_rate_per_order": 0.4089155978114629,
+      "pnl": 1857.0,
+      "pnl_error": -2858.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5597,
+      "fill_error_pct": -0.6743566992014197,
+      "overfill_qty": 0,
+      "underfill_qty": 38,
+      "mae_qty_per_order": 0.003408377432953628,
+      "fill_rate_per_order": 0.2787693963584178,
+      "pnl": 5030.0,
+      "pnl_error": 315.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5628,
+      "fill_error_pct": -0.12422360248447205,
+      "overfill_qty": 22,
+      "underfill_qty": 29,
+      "mae_qty_per_order": 0.004574401291595659,
+      "fill_rate_per_order": 0.2804735850748946,
+      "pnl": 6615.0,
+      "pnl_error": 1900.0
+     }
+    }
+   },
+   {
+    "seed": 4,
+    "mid_final": 984.5,
+    "orders_placed": 10858,
+    "orders_rejected_post_only": 27,
+    "truth": {
+     "filled_qty": 5240,
+     "buy_qty": 2619,
+     "sell_qty": 2621,
+     "fill_events": 3351,
+     "fill_rate_per_order": 0.2663473936268189,
+     "inventory": -2,
+     "pnl": 4403.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 7914,
+      "fill_error_pct": 51.030534351145036,
+      "overfill_qty": 2674,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24627003131331737,
+      "fill_rate_per_order": 0.39666605268005156,
+      "pnl": 7990.0,
+      "pnl_error": 3587.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5221,
+      "fill_error_pct": -0.36259541984732824,
+      "overfill_qty": 0,
+      "underfill_qty": 19,
+      "mae_qty_per_order": 0.0017498618530116044,
+      "fill_rate_per_order": 0.26487382575059865,
+      "pnl": 4494.5,
+      "pnl_error": 91.5
+     },
+     "queue_proportional": {
+      "filled_qty": 5252,
+      "fill_error_pct": 0.22900763358778625,
+      "overfill_qty": 29,
+      "underfill_qty": 17,
+      "mae_qty_per_order": 0.004236507644133358,
+      "fill_rate_per_order": 0.2662552956345552,
+      "pnl": 4586.0,
+      "pnl_error": 183.0
+     }
+    }
+   },
+   {
+    "seed": 5,
+    "mid_final": 1195.5,
+    "orders_placed": 10968,
+    "orders_rejected_post_only": 22,
+    "truth": {
+     "filled_qty": 5490,
+     "buy_qty": 2744,
+     "sell_qty": 2746,
+     "fill_events": 3488,
+     "fill_rate_per_order": 0.2761670313639679,
+     "inventory": -2,
+     "pnl": 4642.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8185,
+      "fill_error_pct": 49.08925318761384,
+      "overfill_qty": 2695,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24571480671043033,
+      "fill_rate_per_order": 0.4061816192560175,
+      "pnl": 5318.5,
+      "pnl_error": 676.5
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5465,
+      "fill_error_pct": -0.4553734061930783,
+      "overfill_qty": 0,
+      "underfill_qty": 25,
+      "mae_qty_per_order": 0.0022793581327498176,
+      "fill_rate_per_order": 0.274525893508388,
+      "pnl": 4346.5,
+      "pnl_error": -295.5
+     },
+     "queue_proportional": {
+      "filled_qty": 5499,
+      "fill_error_pct": 0.16393442622950818,
+      "overfill_qty": 27,
+      "underfill_qty": 18,
+      "mae_qty_per_order": 0.004102844638949671,
+      "fill_rate_per_order": 0.2764405543398979,
+      "pnl": 5184.5,
+      "pnl_error": 542.5
+     }
+    }
+   },
+   {
+    "seed": 6,
+    "mid_final": 945.0,
+    "orders_placed": 11061,
+    "orders_rejected_post_only": 31,
+    "truth": {
+     "filled_qty": 5477,
+     "buy_qty": 2738,
+     "sell_qty": 2739,
+     "fill_events": 3488,
+     "fill_rate_per_order": 0.27393544887442367,
+     "inventory": -1,
+     "pnl": 4408.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8241,
+      "fill_error_pct": 50.46558334854848,
+      "overfill_qty": 2764,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24988699032637193,
+      "fill_rate_per_order": 0.4062019708887081,
+      "pnl": 9299.0,
+      "pnl_error": 4891.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5440,
+      "fill_error_pct": -0.6755523096585722,
+      "overfill_qty": 0,
+      "underfill_qty": 37,
+      "mae_qty_per_order": 0.003345086339390652,
+      "fill_rate_per_order": 0.27122321670735017,
+      "pnl": 4532.0,
+      "pnl_error": 124.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5463,
+      "fill_error_pct": -0.25561438743837867,
+      "overfill_qty": 20,
+      "underfill_qty": 34,
+      "mae_qty_per_order": 0.004882017900732303,
+      "fill_rate_per_order": 0.2722177018352771,
+      "pnl": 4293.0,
+      "pnl_error": -115.0
+     }
+    }
+   },
+   {
+    "seed": 7,
+    "mid_final": 739.5,
+    "orders_placed": 11048,
+    "orders_rejected_post_only": 37,
+    "truth": {
+     "filled_qty": 5555,
+     "buy_qty": 2778,
+     "sell_qty": 2777,
+     "fill_events": 3584,
+     "fill_rate_per_order": 0.2796886314265025,
+     "inventory": 1,
+     "pnl": 4791.5
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8246,
+      "fill_error_pct": 48.442844284428446,
+      "overfill_qty": 2691,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24357349746560464,
+      "fill_rate_per_order": 0.4065894279507603,
+      "pnl": 8228.0,
+      "pnl_error": 3436.5
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5530,
+      "fill_error_pct": -0.45004500450045004,
+      "overfill_qty": 0,
+      "underfill_qty": 25,
+      "mae_qty_per_order": 0.002262853005068791,
+      "fill_rate_per_order": 0.277697320782042,
+      "pnl": 4347.0,
+      "pnl_error": -444.5
+     },
+     "queue_proportional": {
+      "filled_qty": 5551,
+      "fill_error_pct": -0.07200720072007201,
+      "overfill_qty": 18,
+      "underfill_qty": 22,
+      "mae_qty_per_order": 0.003620564808110065,
+      "fill_rate_per_order": 0.278059377262853,
+      "pnl": 4920.5,
+      "pnl_error": 129.0
+     }
+    }
+   },
+   {
+    "seed": 8,
+    "mid_final": 1262.0,
+    "orders_placed": 11006,
+    "orders_rejected_post_only": 36,
+    "truth": {
+     "filled_qty": 5552,
+     "buy_qty": 2776,
+     "sell_qty": 2776,
+     "fill_events": 3522,
+     "fill_rate_per_order": 0.2775758677085226,
+     "inventory": 0,
+     "pnl": 4832.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8182,
+      "fill_error_pct": 47.37031700288185,
+      "overfill_qty": 2630,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.23896056696347448,
+      "fill_rate_per_order": 0.4053243685262584,
+      "pnl": -3268.0,
+      "pnl_error": -8100.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5522,
+      "fill_error_pct": -0.5403458213256485,
+      "overfill_qty": 0,
+      "underfill_qty": 30,
+      "mae_qty_per_order": 0.002725785934944576,
+      "fill_rate_per_order": 0.27521351989823734,
+      "pnl": 4594.0,
+      "pnl_error": -238.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5542,
+      "fill_error_pct": -0.18011527377521613,
+      "overfill_qty": 18,
+      "underfill_qty": 28,
+      "mae_qty_per_order": 0.004179538433581683,
+      "fill_rate_per_order": 0.27639469380338,
+      "pnl": 4315.0,
+      "pnl_error": -517.0
+     }
+    }
+   },
+   {
+    "seed": 9,
+    "mid_final": 879.5,
+    "orders_placed": 11112,
+    "orders_rejected_post_only": 36,
+    "truth": {
+     "filled_qty": 5635,
+     "buy_qty": 2818,
+     "sell_qty": 2817,
+     "fill_events": 3584,
+     "fill_rate_per_order": 0.27942764578833695,
+     "inventory": 1,
+     "pnl": 4568.5
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8417,
+      "fill_error_pct": 49.370008873114465,
+      "overfill_qty": 2782,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.2503599712023038,
+      "fill_rate_per_order": 0.41216702663786897,
+      "pnl": -9392.5,
+      "pnl_error": -13961.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5602,
+      "fill_error_pct": -0.5856255545696539,
+      "overfill_qty": 0,
+      "underfill_qty": 33,
+      "mae_qty_per_order": 0.0029697624190064796,
+      "fill_rate_per_order": 0.2767278617710583,
+      "pnl": 4324.0,
+      "pnl_error": -244.5
+     },
+     "queue_proportional": {
+      "filled_qty": 5626,
+      "fill_error_pct": -0.15971606033717836,
+      "overfill_qty": 21,
+      "underfill_qty": 30,
+      "mae_qty_per_order": 0.00458963282937365,
+      "fill_rate_per_order": 0.2780777537796976,
+      "pnl": 4052.0,
+      "pnl_error": -516.5
+     }
+    }
+   },
+   {
+    "seed": 10,
+    "mid_final": 964.0,
+    "orders_placed": 11145,
+    "orders_rejected_post_only": 29,
+    "truth": {
+     "filled_qty": 5688,
+     "buy_qty": 2844,
+     "sell_qty": 2844,
+     "fill_events": 3643,
+     "fill_rate_per_order": 0.28156123822341855,
+     "inventory": 0,
+     "pnl": 4776.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8461,
+      "fill_error_pct": 48.751758087201125,
+      "overfill_qty": 2773,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24881112606550024,
+      "fill_rate_per_order": 0.41372812920592195,
+      "pnl": 8762.0,
+      "pnl_error": 3986.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5656,
+      "fill_error_pct": -0.5625879043600562,
+      "overfill_qty": 0,
+      "underfill_qty": 32,
+      "mae_qty_per_order": 0.0028712427097353074,
+      "fill_rate_per_order": 0.27913862718707944,
+      "pnl": 4447.0,
+      "pnl_error": -329.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5700,
+      "fill_error_pct": 0.2109704641350211,
+      "overfill_qty": 35,
+      "underfill_qty": 23,
+      "mae_qty_per_order": 0.0052041274113952445,
+      "fill_rate_per_order": 0.28111260655002246,
+      "pnl": 4265.0,
+      "pnl_error": -511.0
+     }
+    }
+   },
+   {
+    "seed": 11,
+    "mid_final": 1112.5,
+    "orders_placed": 10986,
+    "orders_rejected_post_only": 28,
+    "truth": {
+     "filled_qty": 5442,
+     "buy_qty": 2720,
+     "sell_qty": 2722,
+     "fill_events": 3480,
+     "fill_rate_per_order": 0.2746222464955398,
+     "inventory": -2,
+     "pnl": 4832.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8092,
+      "fill_error_pct": 48.69533259830944,
+      "overfill_qty": 2650,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.2412160932095394,
+      "fill_rate_per_order": 0.4011469142545057,
+      "pnl": 7236.0,
+      "pnl_error": 2404.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5411,
+      "fill_error_pct": -0.569643513414186,
+      "overfill_qty": 0,
+      "underfill_qty": 31,
+      "mae_qty_per_order": 0.002821773165847442,
+      "fill_rate_per_order": 0.2719825232113599,
+      "pnl": 4201.5,
+      "pnl_error": -630.5
+     },
+     "queue_proportional": {
+      "filled_qty": 5440,
+      "fill_error_pct": -0.036751194413818446,
+      "overfill_qty": 25,
+      "underfill_qty": 27,
+      "mae_qty_per_order": 0.004733296923357,
+      "fill_rate_per_order": 0.2736209721463681,
+      "pnl": 4598.0,
+      "pnl_error": -234.0
+     }
+    }
+   },
+   {
+    "seed": 12,
+    "mid_final": 972.5,
+    "orders_placed": 10825,
+    "orders_rejected_post_only": 34,
+    "truth": {
+     "filled_qty": 5169,
+     "buy_qty": 2584,
+     "sell_qty": 2585,
+     "fill_events": 3329,
+     "fill_rate_per_order": 0.2641108545034642,
+     "inventory": -1,
+     "pnl": 4149.5
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 7919,
+      "fill_error_pct": 53.20177984136197,
+      "overfill_qty": 2750,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.2540415704387991,
+      "fill_rate_per_order": 0.39990762124711315,
+      "pnl": 8956.5,
+      "pnl_error": 4807.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5133,
+      "fill_error_pct": -0.6964596633778294,
+      "overfill_qty": 0,
+      "underfill_qty": 36,
+      "mae_qty_per_order": 0.003325635103926097,
+      "fill_rate_per_order": 0.2612471131639723,
+      "pnl": 4320.5,
+      "pnl_error": 171.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5164,
+      "fill_error_pct": -0.0967305088024763,
+      "overfill_qty": 24,
+      "underfill_qty": 29,
+      "mae_qty_per_order": 0.004896073903002309,
+      "fill_rate_per_order": 0.26272517321016164,
+      "pnl": 4397.0,
+      "pnl_error": 247.5
+     }
+    }
+   },
+   {
+    "seed": 13,
+    "mid_final": 980.5,
+    "orders_placed": 11169,
+    "orders_rejected_post_only": 21,
+    "truth": {
+     "filled_qty": 5735,
+     "buy_qty": 2867,
+     "sell_qty": 2868,
+     "fill_events": 3628,
+     "fill_rate_per_order": 0.2822992210582863,
+     "inventory": -1,
+     "pnl": 4914.5
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8458,
+      "fill_error_pct": 47.48038360941587,
+      "overfill_qty": 2723,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24379980302623333,
+      "fill_rate_per_order": 0.4131972423672665,
+      "pnl": 13761.0,
+      "pnl_error": 8846.5
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5705,
+      "fill_error_pct": -0.5231037489102005,
+      "overfill_qty": 0,
+      "underfill_qty": 30,
+      "mae_qty_per_order": 0.0026860059092130005,
+      "fill_rate_per_order": 0.2801504163309159,
+      "pnl": 5054.5,
+      "pnl_error": 140.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5739,
+      "fill_error_pct": 0.06974716652136007,
+      "overfill_qty": 29,
+      "underfill_qty": 25,
+      "mae_qty_per_order": 0.004834810636583401,
+      "fill_rate_per_order": 0.28194108693705794,
+      "pnl": 5424.5,
+      "pnl_error": 510.0
+     }
+    }
+   },
+   {
+    "seed": 14,
+    "mid_final": 1034.5,
+    "orders_placed": 10902,
+    "orders_rejected_post_only": 29,
+    "truth": {
+     "filled_qty": 5631,
+     "buy_qty": 2815,
+     "sell_qty": 2816,
+     "fill_events": 3601,
+     "fill_rate_per_order": 0.2851770317372959,
+     "inventory": -1,
+     "pnl": 4896.5
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8214,
+      "fill_error_pct": 45.87107085775173,
+      "overfill_qty": 2583,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.23692900385250412,
+      "fill_rate_per_order": 0.41111722619702806,
+      "pnl": 11520.0,
+      "pnl_error": 6623.5
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5599,
+      "fill_error_pct": -0.5682827206535251,
+      "overfill_qty": 0,
+      "underfill_qty": 32,
+      "mae_qty_per_order": 0.002935241240139424,
+      "fill_rate_per_order": 0.2826086956521739,
+      "pnl": 4926.5,
+      "pnl_error": 30.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5624,
+      "fill_error_pct": -0.12431184514295862,
+      "overfill_qty": 19,
+      "underfill_qty": 26,
+      "mae_qty_per_order": 0.004127682993946065,
+      "fill_rate_per_order": 0.2837094111172262,
+      "pnl": 5208.0,
+      "pnl_error": 311.5
+     }
+    }
+   },
+   {
+    "seed": 15,
+    "mid_final": 943.0,
+    "orders_placed": 11237,
+    "orders_rejected_post_only": 41,
+    "truth": {
+     "filled_qty": 5850,
+     "buy_qty": 2924,
+     "sell_qty": 2926,
+     "fill_events": 3698,
+     "fill_rate_per_order": 0.2874432677760968,
+     "inventory": -2,
+     "pnl": 4757.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8568,
+      "fill_error_pct": 46.46153846153846,
+      "overfill_qty": 2718,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24187950520601584,
+      "fill_rate_per_order": 0.4149684079380618,
+      "pnl": 13144.0,
+      "pnl_error": 8387.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5807,
+      "fill_error_pct": -0.7350427350427351,
+      "overfill_qty": 0,
+      "underfill_qty": 43,
+      "mae_qty_per_order": 0.003826644122096645,
+      "fill_rate_per_order": 0.284239565720388,
+      "pnl": 4809.0,
+      "pnl_error": 52.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5827,
+      "fill_error_pct": -0.39316239316239315,
+      "overfill_qty": 14,
+      "underfill_qty": 37,
+      "mae_qty_per_order": 0.0045385779122541605,
+      "fill_rate_per_order": 0.28539645812939396,
+      "pnl": 4892.0,
+      "pnl_error": 135.0
+     }
+    }
+   },
+   {
+    "seed": 16,
+    "mid_final": 1013.0,
+    "orders_placed": 10994,
+    "orders_rejected_post_only": 39,
+    "truth": {
+     "filled_qty": 5330,
+     "buy_qty": 2665,
+     "sell_qty": 2665,
+     "fill_events": 3409,
+     "fill_rate_per_order": 0.2686920138257231,
+     "inventory": 0,
+     "pnl": 4133.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8003,
+      "fill_error_pct": 50.150093808630395,
+      "overfill_qty": 2673,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24313261779152265,
+      "fill_rate_per_order": 0.39885392032017464,
+      "pnl": 12268.0,
+      "pnl_error": 8135.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5304,
+      "fill_error_pct": -0.4878048780487805,
+      "overfill_qty": 0,
+      "underfill_qty": 26,
+      "mae_qty_per_order": 0.002364926323449154,
+      "fill_rate_per_order": 0.2667818810260142,
+      "pnl": 4009.0,
+      "pnl_error": -124.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5325,
+      "fill_error_pct": -0.09380863039399624,
+      "overfill_qty": 14,
+      "underfill_qty": 19,
+      "mae_qty_per_order": 0.0030016372566854647,
+      "fill_rate_per_order": 0.2679643441877388,
+      "pnl": 3977.0,
+      "pnl_error": -156.0
+     }
+    }
+   },
+   {
+    "seed": 17,
+    "mid_final": 906.0,
+    "orders_placed": 11118,
+    "orders_rejected_post_only": 31,
+    "truth": {
+     "filled_qty": 5748,
+     "buy_qty": 2874,
+     "sell_qty": 2874,
+     "fill_events": 3665,
+     "fill_rate_per_order": 0.28557294477423995,
+     "inventory": 0,
+     "pnl": 4791.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8306,
+      "fill_error_pct": 44.50243562978427,
+      "overfill_qty": 2558,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.23007735204173413,
+      "fill_rate_per_order": 0.40600827486958085,
+      "pnl": 12010.0,
+      "pnl_error": 7219.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5715,
+      "fill_error_pct": -0.5741127348643006,
+      "overfill_qty": 0,
+      "underfill_qty": 33,
+      "mae_qty_per_order": 0.0029681597409606042,
+      "fill_rate_per_order": 0.28287461773700306,
+      "pnl": 5018.0,
+      "pnl_error": 227.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5755,
+      "fill_error_pct": 0.12178148921363953,
+      "overfill_qty": 36,
+      "underfill_qty": 29,
+      "mae_qty_per_order": 0.005846375247346645,
+      "fill_rate_per_order": 0.28512322360136716,
+      "pnl": 5184.0,
+      "pnl_error": 393.0
+     }
+    }
+   },
+   {
+    "seed": 18,
+    "mid_final": 1160.0,
+    "orders_placed": 10995,
+    "orders_rejected_post_only": 41,
+    "truth": {
+     "filled_qty": 5397,
+     "buy_qty": 2699,
+     "sell_qty": 2698,
+     "fill_events": 3452,
+     "fill_rate_per_order": 0.27048658481127785,
+     "inventory": 1,
+     "pnl": 4693.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8123,
+      "fill_error_pct": 50.50954233833611,
+      "overfill_qty": 2726,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24793087767166894,
+      "fill_rate_per_order": 0.40372896771259664,
+      "pnl": 6909.0,
+      "pnl_error": 2216.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5373,
+      "fill_error_pct": -0.44469149527515284,
+      "overfill_qty": 0,
+      "underfill_qty": 24,
+      "mae_qty_per_order": 0.00218281036834925,
+      "fill_rate_per_order": 0.2684856753069577,
+      "pnl": 5101.0,
+      "pnl_error": 408.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5398,
+      "fill_error_pct": 0.01852881230313137,
+      "overfill_qty": 24,
+      "underfill_qty": 23,
+      "mae_qty_per_order": 0.004274670304683947,
+      "fill_rate_per_order": 0.26994088221919055,
+      "pnl": 5225.0,
+      "pnl_error": 532.0
+     }
+    }
+   },
+   {
+    "seed": 19,
+    "mid_final": 1032.0,
+    "orders_placed": 10922,
+    "orders_rejected_post_only": 28,
+    "truth": {
+     "filled_qty": 5600,
+     "buy_qty": 2800,
+     "sell_qty": 2800,
+     "fill_events": 3577,
+     "fill_rate_per_order": 0.28126716718549716,
+     "inventory": 0,
+     "pnl": 4903.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8235,
+      "fill_error_pct": 47.05357142857143,
+      "overfill_qty": 2635,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24125618018677897,
+      "fill_rate_per_order": 0.4104559604468046,
+      "pnl": 9118.0,
+      "pnl_error": 4215.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5557,
+      "fill_error_pct": -0.7678571428571429,
+      "overfill_qty": 0,
+      "underfill_qty": 43,
+      "mae_qty_per_order": 0.003937007874015748,
+      "fill_rate_per_order": 0.27815418421534516,
+      "pnl": 4277.0,
+      "pnl_error": -626.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5594,
+      "fill_error_pct": -0.10714285714285714,
+      "overfill_qty": 27,
+      "underfill_qty": 33,
+      "mae_qty_per_order": 0.005493499359091741,
+      "fill_rate_per_order": 0.28035158395898185,
+      "pnl": 4480.0,
+      "pnl_error": -423.0
+     }
+    }
+   }
+  ],
+  "no_informed_flow": [
+   {
+    "seed": 0,
+    "mid_final": 1030.5,
+    "orders_placed": 10944,
+    "orders_rejected_post_only": 29,
+    "truth": {
+     "filled_qty": 5427,
+     "buy_qty": 2713,
+     "sell_qty": 2714,
+     "fill_events": 3464,
+     "fill_rate_per_order": 0.2741228070175439,
+     "inventory": -1,
+     "pnl": 4673.5
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8087,
+      "fill_error_pct": 49.01418831767091,
+      "overfill_qty": 2660,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24305555555555555,
+      "fill_rate_per_order": 0.40405701754385964,
+      "pnl": 11290.5,
+      "pnl_error": 6617.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5390,
+      "fill_error_pct": -0.6817763036668509,
+      "overfill_qty": 0,
+      "underfill_qty": 37,
+      "mae_qty_per_order": 0.003380847953216374,
+      "fill_rate_per_order": 0.27129020467836257,
+      "pnl": 5295.0,
+      "pnl_error": 621.5
+     },
+     "queue_proportional": {
+      "filled_qty": 5414,
+      "fill_error_pct": -0.23954302561267735,
+      "overfill_qty": 15,
+      "underfill_qty": 28,
+      "mae_qty_per_order": 0.003929093567251462,
+      "fill_rate_per_order": 0.2723866959064328,
+      "pnl": 5140.0,
+      "pnl_error": 466.5
+     }
+    }
+   },
+   {
+    "seed": 1,
+    "mid_final": 997.5,
+    "orders_placed": 10794,
+    "orders_rejected_post_only": 24,
+    "truth": {
+     "filled_qty": 5313,
+     "buy_qty": 2657,
+     "sell_qty": 2656,
+     "fill_events": 3408,
+     "fill_rate_per_order": 0.27181767648693717,
+     "inventory": 1,
+     "pnl": 4952.5
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 7859,
+      "fill_error_pct": 47.9201957462827,
+      "overfill_qty": 2546,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.23587178061886233,
+      "fill_rate_per_order": 0.39948119325551235,
+      "pnl": 7945.5,
+      "pnl_error": 2993.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5279,
+      "fill_error_pct": -0.639939770374553,
+      "overfill_qty": 0,
+      "underfill_qty": 34,
+      "mae_qty_per_order": 0.003149898091532333,
+      "fill_rate_per_order": 0.2691309987029831,
+      "pnl": 5105.5,
+      "pnl_error": 153.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5304,
+      "fill_error_pct": -0.16939582156973462,
+      "overfill_qty": 21,
+      "underfill_qty": 30,
+      "mae_qty_per_order": 0.004724847137298499,
+      "fill_rate_per_order": 0.270242727441171,
+      "pnl": 4944.0,
+      "pnl_error": -8.5
+     }
+    }
+   },
+   {
+    "seed": 2,
+    "mid_final": 826.5,
+    "orders_placed": 10958,
+    "orders_rejected_post_only": 32,
+    "truth": {
+     "filled_qty": 5376,
+     "buy_qty": 2687,
+     "sell_qty": 2689,
+     "fill_events": 3489,
+     "fill_rate_per_order": 0.27149114801971164,
+     "inventory": -2,
+     "pnl": 4321.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8091,
+      "fill_error_pct": 50.502232142857146,
+      "overfill_qty": 2715,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24776419054572002,
+      "fill_rate_per_order": 0.4018068990691732,
+      "pnl": -1993.5,
+      "pnl_error": -6314.5
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5332,
+      "fill_error_pct": -0.8184523809523809,
+      "overfill_qty": 0,
+      "underfill_qty": 44,
+      "mae_qty_per_order": 0.004015331264829348,
+      "fill_rate_per_order": 0.2683883920423435,
+      "pnl": 5688.0,
+      "pnl_error": 1367.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5368,
+      "fill_error_pct": -0.1488095238095238,
+      "overfill_qty": 24,
+      "underfill_qty": 32,
+      "mae_qty_per_order": 0.005110421609782807,
+      "fill_rate_per_order": 0.27030480014601205,
+      "pnl": 6638.0,
+      "pnl_error": 2317.0
+     }
+    }
+   },
+   {
+    "seed": 3,
+    "mid_final": 1316.0,
+    "orders_placed": 11067,
+    "orders_rejected_post_only": 26,
+    "truth": {
+     "filled_qty": 5610,
+     "buy_qty": 2806,
+     "sell_qty": 2804,
+     "fill_events": 3560,
+     "fill_rate_per_order": 0.2808349146110057,
+     "inventory": 2,
+     "pnl": 4806.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8291,
+      "fill_error_pct": 47.78966131907308,
+      "overfill_qty": 2681,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.2422517394054396,
+      "fill_rate_per_order": 0.41059004246860037,
+      "pnl": 8659.0,
+      "pnl_error": 3853.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5575,
+      "fill_error_pct": -0.6238859180035651,
+      "overfill_qty": 0,
+      "underfill_qty": 35,
+      "mae_qty_per_order": 0.0031625553447185324,
+      "fill_rate_per_order": 0.27821451161109606,
+      "pnl": 3246.0,
+      "pnl_error": -1560.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5600,
+      "fill_error_pct": -0.17825311942959002,
+      "overfill_qty": 19,
+      "underfill_qty": 29,
+      "mae_qty_per_order": 0.00433721875847113,
+      "fill_rate_per_order": 0.2794795337489835,
+      "pnl": 3120.0,
+      "pnl_error": -1686.0
+     }
+    }
+   },
+   {
+    "seed": 4,
+    "mid_final": 982.0,
+    "orders_placed": 10977,
+    "orders_rejected_post_only": 40,
+    "truth": {
+     "filled_qty": 5538,
+     "buy_qty": 2769,
+     "sell_qty": 2769,
+     "fill_events": 3547,
+     "fill_rate_per_order": 0.2807688803862622,
+     "inventory": 0,
+     "pnl": 5302.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8243,
+      "fill_error_pct": 48.84434814012279,
+      "overfill_qty": 2705,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24642434180559353,
+      "fill_rate_per_order": 0.4097658741003917,
+      "pnl": 13748.0,
+      "pnl_error": 8446.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5498,
+      "fill_error_pct": -0.7222824124232575,
+      "overfill_qty": 0,
+      "underfill_qty": 40,
+      "mae_qty_per_order": 0.0036439828732804957,
+      "fill_rate_per_order": 0.27767149494397375,
+      "pnl": 5025.0,
+      "pnl_error": -277.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5534,
+      "fill_error_pct": -0.07222824124232576,
+      "overfill_qty": 29,
+      "underfill_qty": 33,
+      "mae_qty_per_order": 0.005648173453584768,
+      "fill_rate_per_order": 0.279402386808782,
+      "pnl": 5413.0,
+      "pnl_error": 111.0
+     }
+    }
+   },
+   {
+    "seed": 5,
+    "mid_final": 1195.0,
+    "orders_placed": 10963,
+    "orders_rejected_post_only": 31,
+    "truth": {
+     "filled_qty": 5327,
+     "buy_qty": 2664,
+     "sell_qty": 2663,
+     "fill_events": 3461,
+     "fill_rate_per_order": 0.2704551673811913,
+     "inventory": 1,
+     "pnl": 4459.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8025,
+      "fill_error_pct": 50.647644077341845,
+      "overfill_qty": 2698,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24610051993067592,
+      "fill_rate_per_order": 0.39952567727811733,
+      "pnl": 2722.0,
+      "pnl_error": -1737.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5294,
+      "fill_error_pct": -0.6194856391965459,
+      "overfill_qty": 0,
+      "underfill_qty": 33,
+      "mae_qty_per_order": 0.0030101249657940345,
+      "fill_rate_per_order": 0.26790112195566906,
+      "pnl": 4579.0,
+      "pnl_error": 120.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5319,
+      "fill_error_pct": -0.1501783367749202,
+      "overfill_qty": 18,
+      "underfill_qty": 26,
+      "mae_qty_per_order": 0.004013499954392046,
+      "fill_rate_per_order": 0.26945179239259326,
+      "pnl": 4190.0,
+      "pnl_error": -269.0
+     }
+    }
+   },
+   {
+    "seed": 6,
+    "mid_final": 944.5,
+    "orders_placed": 11264,
+    "orders_rejected_post_only": 43,
+    "truth": {
+     "filled_qty": 5913,
+     "buy_qty": 2956,
+     "sell_qty": 2957,
+     "fill_events": 3753,
+     "fill_rate_per_order": 0.28870738636363635,
+     "inventory": -1,
+     "pnl": 5400.5
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8666,
+      "fill_error_pct": 46.558430576695415,
+      "overfill_qty": 2753,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24440696022727273,
+      "fill_rate_per_order": 0.4181463068181818,
+      "pnl": 10888.0,
+      "pnl_error": 5487.5
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5878,
+      "fill_error_pct": -0.5919161170302722,
+      "overfill_qty": 0,
+      "underfill_qty": 35,
+      "mae_qty_per_order": 0.003107244318181818,
+      "fill_rate_per_order": 0.2859552556818182,
+      "pnl": 5603.0,
+      "pnl_error": 202.5
+     },
+     "queue_proportional": {
+      "filled_qty": 5898,
+      "fill_error_pct": -0.2536783358701167,
+      "overfill_qty": 16,
+      "underfill_qty": 31,
+      "mae_qty_per_order": 0.004172585227272727,
+      "fill_rate_per_order": 0.287109375,
+      "pnl": 5847.0,
+      "pnl_error": 446.5
+     }
+    }
+   },
+   {
+    "seed": 7,
+    "mid_final": 740.5,
+    "orders_placed": 11088,
+    "orders_rejected_post_only": 40,
+    "truth": {
+     "filled_qty": 5594,
+     "buy_qty": 2796,
+     "sell_qty": 2798,
+     "fill_events": 3558,
+     "fill_rate_per_order": 0.2801226551226551,
+     "inventory": -2,
+     "pnl": 5062.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8331,
+      "fill_error_pct": 48.927422238112264,
+      "overfill_qty": 2737,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24684343434343434,
+      "fill_rate_per_order": 0.4099025974025974,
+      "pnl": 12357.5,
+      "pnl_error": 7295.5
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5558,
+      "fill_error_pct": -0.6435466571326421,
+      "overfill_qty": 0,
+      "underfill_qty": 36,
+      "mae_qty_per_order": 0.003246753246753247,
+      "fill_rate_per_order": 0.2773268398268398,
+      "pnl": 4070.0,
+      "pnl_error": -992.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5584,
+      "fill_error_pct": -0.1787629603146228,
+      "overfill_qty": 21,
+      "underfill_qty": 31,
+      "mae_qty_per_order": 0.00468975468975469,
+      "fill_rate_per_order": 0.27886002886002886,
+      "pnl": 5203.0,
+      "pnl_error": 141.0
+     }
+    }
+   },
+   {
+    "seed": 8,
+    "mid_final": 1261.0,
+    "orders_placed": 11099,
+    "orders_rejected_post_only": 42,
+    "truth": {
+     "filled_qty": 5619,
+     "buy_qty": 2809,
+     "sell_qty": 2810,
+     "fill_events": 3566,
+     "fill_rate_per_order": 0.2778628705288765,
+     "inventory": -1,
+     "pnl": 4790.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8269,
+      "fill_error_pct": 47.16141662217476,
+      "overfill_qty": 2650,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.23876024867105144,
+      "fill_rate_per_order": 0.40580232453374177,
+      "pnl": -9968.0,
+      "pnl_error": -14758.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5588,
+      "fill_error_pct": -0.5516995906744973,
+      "overfill_qty": 0,
+      "underfill_qty": 31,
+      "mae_qty_per_order": 0.0027930444184160737,
+      "fill_rate_per_order": 0.2756104153527345,
+      "pnl": 4496.0,
+      "pnl_error": -294.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5614,
+      "fill_error_pct": -0.08898380494749955,
+      "overfill_qty": 20,
+      "underfill_qty": 25,
+      "mae_qty_per_order": 0.00405441931705559,
+      "fill_rate_per_order": 0.2773222812866024,
+      "pnl": 5828.0,
+      "pnl_error": 1038.0
+     }
+    }
+   },
+   {
+    "seed": 9,
+    "mid_final": 881.0,
+    "orders_placed": 11115,
+    "orders_rejected_post_only": 31,
+    "truth": {
+     "filled_qty": 5707,
+     "buy_qty": 2853,
+     "sell_qty": 2854,
+     "fill_events": 3702,
+     "fill_rate_per_order": 0.28439046333783174,
+     "inventory": -1,
+     "pnl": 4751.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8419,
+      "fill_error_pct": 47.52058875065709,
+      "overfill_qty": 2712,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24399460188933872,
+      "fill_rate_per_order": 0.41133603238866395,
+      "pnl": 16110.0,
+      "pnl_error": 11359.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5670,
+      "fill_error_pct": -0.6483266164359558,
+      "overfill_qty": 0,
+      "underfill_qty": 37,
+      "mae_qty_per_order": 0.003328834907782276,
+      "fill_rate_per_order": 0.2818713450292398,
+      "pnl": 5122.0,
+      "pnl_error": 371.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5706,
+      "fill_error_pct": -0.017522340984755563,
+      "overfill_qty": 27,
+      "underfill_qty": 28,
+      "mae_qty_per_order": 0.004948268106162843,
+      "fill_rate_per_order": 0.28376068376068375,
+      "pnl": 4842.0,
+      "pnl_error": 91.0
+     }
+    }
+   },
+   {
+    "seed": 10,
+    "mid_final": 963.5,
+    "orders_placed": 11065,
+    "orders_rejected_post_only": 29,
+    "truth": {
+     "filled_qty": 5709,
+     "buy_qty": 2855,
+     "sell_qty": 2854,
+     "fill_events": 3635,
+     "fill_rate_per_order": 0.284139177586986,
+     "inventory": 1,
+     "pnl": 5185.5
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8364,
+      "fill_error_pct": 46.5055176037835,
+      "overfill_qty": 2655,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.23994577496610936,
+      "fill_rate_per_order": 0.41084500677812924,
+      "pnl": 11894.0,
+      "pnl_error": 6708.5
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5677,
+      "fill_error_pct": -0.5605184795936241,
+      "overfill_qty": 0,
+      "underfill_qty": 32,
+      "mae_qty_per_order": 0.0028920018075011297,
+      "fill_rate_per_order": 0.2815183009489381,
+      "pnl": 5247.5,
+      "pnl_error": 62.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5708,
+      "fill_error_pct": -0.017516202487300753,
+      "overfill_qty": 26,
+      "underfill_qty": 27,
+      "mae_qty_per_order": 0.004789877993673746,
+      "fill_rate_per_order": 0.2835065521915951,
+      "pnl": 4728.0,
+      "pnl_error": -457.5
+     }
+    }
+   },
+   {
+    "seed": 11,
+    "mid_final": 1110.0,
+    "orders_placed": 10970,
+    "orders_rejected_post_only": 30,
+    "truth": {
+     "filled_qty": 5586,
+     "buy_qty": 2793,
+     "sell_qty": 2793,
+     "fill_events": 3532,
+     "fill_rate_per_order": 0.27939835916134914,
+     "inventory": 0,
+     "pnl": 5080.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8197,
+      "fill_error_pct": 46.741854636591476,
+      "overfill_qty": 2611,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.2380127620783956,
+      "fill_rate_per_order": 0.40556061987237924,
+      "pnl": 16625.0,
+      "pnl_error": 11545.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5557,
+      "fill_error_pct": -0.519155030433226,
+      "overfill_qty": 0,
+      "underfill_qty": 29,
+      "mae_qty_per_order": 0.002643573381950775,
+      "fill_rate_per_order": 0.277028258887876,
+      "pnl": 5347.0,
+      "pnl_error": 267.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5577,
+      "fill_error_pct": -0.1611170784103115,
+      "overfill_qty": 18,
+      "underfill_qty": 27,
+      "mae_qty_per_order": 0.004102096627164996,
+      "fill_rate_per_order": 0.27821330902461255,
+      "pnl": 4554.0,
+      "pnl_error": -526.0
+     }
+    }
+   },
+   {
+    "seed": 12,
+    "mid_final": 970.5,
+    "orders_placed": 10980,
+    "orders_rejected_post_only": 34,
+    "truth": {
+     "filled_qty": 5509,
+     "buy_qty": 2755,
+     "sell_qty": 2754,
+     "fill_events": 3529,
+     "fill_rate_per_order": 0.27814207650273226,
+     "inventory": 1,
+     "pnl": 5502.5
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8360,
+      "fill_error_pct": 51.75167907061173,
+      "overfill_qty": 2851,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.25965391621129325,
+      "fill_rate_per_order": 0.41721311475409834,
+      "pnl": 15359.0,
+      "pnl_error": 9856.5
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5475,
+      "fill_error_pct": -0.6171719005264114,
+      "overfill_qty": 0,
+      "underfill_qty": 34,
+      "mae_qty_per_order": 0.0030965391621129326,
+      "fill_rate_per_order": 0.275591985428051,
+      "pnl": 4937.5,
+      "pnl_error": -565.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5495,
+      "fill_error_pct": -0.25412960609911056,
+      "overfill_qty": 17,
+      "underfill_qty": 31,
+      "mae_qty_per_order": 0.004371584699453552,
+      "fill_rate_per_order": 0.27641165755919855,
+      "pnl": 5332.5,
+      "pnl_error": -170.0
+     }
+    }
+   },
+   {
+    "seed": 13,
+    "mid_final": 980.0,
+    "orders_placed": 10945,
+    "orders_rejected_post_only": 45,
+    "truth": {
+     "filled_qty": 5423,
+     "buy_qty": 2712,
+     "sell_qty": 2711,
+     "fill_events": 3457,
+     "fill_rate_per_order": 0.2720877112836912,
+     "inventory": 1,
+     "pnl": 5037.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8188,
+      "fill_error_pct": 50.98653881615342,
+      "overfill_qty": 2765,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.2526267702147099,
+      "fill_rate_per_order": 0.40657834627683875,
+      "pnl": 7453.0,
+      "pnl_error": 2416.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5392,
+      "fill_error_pct": -0.5716393140328232,
+      "overfill_qty": 0,
+      "underfill_qty": 31,
+      "mae_qty_per_order": 0.002832343535861124,
+      "fill_rate_per_order": 0.26962083142987664,
+      "pnl": 5376.0,
+      "pnl_error": 339.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5414,
+      "fill_error_pct": -0.16595980084823897,
+      "overfill_qty": 19,
+      "underfill_qty": 28,
+      "mae_qty_per_order": 0.00429419826404751,
+      "fill_rate_per_order": 0.27071722247601643,
+      "pnl": 5239.0,
+      "pnl_error": 202.0
+     }
+    }
+   },
+   {
+    "seed": 14,
+    "mid_final": 1036.5,
+    "orders_placed": 11159,
+    "orders_rejected_post_only": 36,
+    "truth": {
+     "filled_qty": 5802,
+     "buy_qty": 2900,
+     "sell_qty": 2902,
+     "fill_events": 3696,
+     "fill_rate_per_order": 0.28586790931087014,
+     "inventory": -2,
+     "pnl": 5495.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8368,
+      "fill_error_pct": 44.2261289210617,
+      "overfill_qty": 2566,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.22994892015413568,
+      "fill_rate_per_order": 0.40810108432655257,
+      "pnl": 12306.0,
+      "pnl_error": 6811.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5762,
+      "fill_error_pct": -0.6894174422612892,
+      "overfill_qty": 0,
+      "underfill_qty": 40,
+      "mae_qty_per_order": 0.003584550586970159,
+      "fill_rate_per_order": 0.28300026884129403,
+      "pnl": 5704.0,
+      "pnl_error": 209.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5791,
+      "fill_error_pct": -0.18958979662185454,
+      "overfill_qty": 23,
+      "underfill_qty": 34,
+      "mae_qty_per_order": 0.005107984586432476,
+      "fill_rate_per_order": 0.2844340890760821,
+      "pnl": 5771.5,
+      "pnl_error": 276.5
+     }
+    }
+   },
+   {
+    "seed": 15,
+    "mid_final": 942.5,
+    "orders_placed": 11136,
+    "orders_rejected_post_only": 41,
+    "truth": {
+     "filled_qty": 5829,
+     "buy_qty": 2914,
+     "sell_qty": 2915,
+     "fill_events": 3744,
+     "fill_rate_per_order": 0.2901400862068966,
+     "inventory": -1,
+     "pnl": 5503.5
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8446,
+      "fill_error_pct": 44.896208612111856,
+      "overfill_qty": 2617,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.23500359195402298,
+      "fill_rate_per_order": 0.4133441091954023,
+      "pnl": 11467.0,
+      "pnl_error": 5963.5
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5793,
+      "fill_error_pct": -0.6176016469377251,
+      "overfill_qty": 0,
+      "underfill_qty": 36,
+      "mae_qty_per_order": 0.003232758620689655,
+      "fill_rate_per_order": 0.28717672413793105,
+      "pnl": 5629.5,
+      "pnl_error": 126.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5819,
+      "fill_error_pct": -0.171556013038257,
+      "overfill_qty": 22,
+      "underfill_qty": 32,
+      "mae_qty_per_order": 0.004849137931034483,
+      "fill_rate_per_order": 0.28879310344827586,
+      "pnl": 5500.5,
+      "pnl_error": -3.0
+     }
+    }
+   },
+   {
+    "seed": 16,
+    "mid_final": 1013.5,
+    "orders_placed": 11001,
+    "orders_rejected_post_only": 26,
+    "truth": {
+     "filled_qty": 5557,
+     "buy_qty": 2779,
+     "sell_qty": 2778,
+     "fill_events": 3554,
+     "fill_rate_per_order": 0.2805199527315699,
+     "inventory": 1,
+     "pnl": 5082.5
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8267,
+      "fill_error_pct": 48.76732049667086,
+      "overfill_qty": 2710,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.24634124170529953,
+      "fill_rate_per_order": 0.41178074720479957,
+      "pnl": 11200.5,
+      "pnl_error": 6118.0
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5507,
+      "fill_error_pct": -0.8997660608241858,
+      "overfill_qty": 0,
+      "underfill_qty": 50,
+      "mae_qty_per_order": 0.004545041359876375,
+      "fill_rate_per_order": 0.2767021179892737,
+      "pnl": 4817.5,
+      "pnl_error": -265.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5542,
+      "fill_error_pct": -0.2699298182472557,
+      "overfill_qty": 28,
+      "underfill_qty": 43,
+      "mae_qty_per_order": 0.006453958731024452,
+      "fill_rate_per_order": 0.27861103536042175,
+      "pnl": 5306.0,
+      "pnl_error": 223.5
+     }
+    }
+   },
+   {
+    "seed": 17,
+    "mid_final": 905.5,
+    "orders_placed": 11022,
+    "orders_rejected_post_only": 36,
+    "truth": {
+     "filled_qty": 5480,
+     "buy_qty": 2740,
+     "sell_qty": 2740,
+     "fill_events": 3518,
+     "fill_rate_per_order": 0.27581201233895847,
+     "inventory": 0,
+     "pnl": 5164.0
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8243,
+      "fill_error_pct": 50.41970802919708,
+      "overfill_qty": 2763,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.2506804572672836,
+      "fill_rate_per_order": 0.40700417347123935,
+      "pnl": 9355.5,
+      "pnl_error": 4191.5
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5442,
+      "fill_error_pct": -0.6934306569343066,
+      "overfill_qty": 0,
+      "underfill_qty": 38,
+      "mae_qty_per_order": 0.0034476501542369804,
+      "fill_rate_per_order": 0.27299945563418615,
+      "pnl": 5099.0,
+      "pnl_error": -65.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5479,
+      "fill_error_pct": -0.01824817518248175,
+      "overfill_qty": 32,
+      "underfill_qty": 33,
+      "mae_qty_per_order": 0.005897296316457993,
+      "fill_rate_per_order": 0.2743603701687534,
+      "pnl": 5094.5,
+      "pnl_error": -69.5
+     }
+    }
+   },
+   {
+    "seed": 18,
+    "mid_final": 1159.5,
+    "orders_placed": 10924,
+    "orders_rejected_post_only": 39,
+    "truth": {
+     "filled_qty": 5565,
+     "buy_qty": 2784,
+     "sell_qty": 2781,
+     "fill_events": 3575,
+     "fill_rate_per_order": 0.28103258879531307,
+     "inventory": 3,
+     "pnl": 4945.5
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8184,
+      "fill_error_pct": 47.06199460916442,
+      "overfill_qty": 2619,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.23974734529476383,
+      "fill_rate_per_order": 0.4081838154522153,
+      "pnl": 5615.0,
+      "pnl_error": 669.5
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5524,
+      "fill_error_pct": -0.7367475292003594,
+      "overfill_qty": 0,
+      "underfill_qty": 41,
+      "mae_qty_per_order": 0.0037532039545953863,
+      "fill_rate_per_order": 0.27828634199926766,
+      "pnl": 5768.0,
+      "pnl_error": 822.5
+     },
+     "queue_proportional": {
+      "filled_qty": 5553,
+      "fill_error_pct": -0.215633423180593,
+      "overfill_qty": 24,
+      "underfill_qty": 36,
+      "mae_qty_per_order": 0.005492493592090809,
+      "fill_rate_per_order": 0.27965946539729036,
+      "pnl": 5571.5,
+      "pnl_error": 626.0
+     }
+    }
+   },
+   {
+    "seed": 19,
+    "mid_final": 1030.5,
+    "orders_placed": 10922,
+    "orders_rejected_post_only": 32,
+    "truth": {
+     "filled_qty": 5449,
+     "buy_qty": 2726,
+     "sell_qty": 2723,
+     "fill_events": 3481,
+     "fill_rate_per_order": 0.27687236769822376,
+     "inventory": 3,
+     "pnl": 5360.5
+    },
+    "models": {
+     "naive_touch": {
+      "filled_qty": 8210,
+      "fill_error_pct": 50.66984767847311,
+      "overfill_qty": 2761,
+      "underfill_qty": 0,
+      "mae_qty_per_order": 0.2527925288408716,
+      "fill_rate_per_order": 0.41192089360922907,
+      "pnl": 7414.0,
+      "pnl_error": 2053.5
+     },
+     "queue_pessimistic": {
+      "filled_qty": 5395,
+      "fill_error_pct": -0.9910075243163883,
+      "overfill_qty": 0,
+      "underfill_qty": 54,
+      "mae_qty_per_order": 0.004944149423182567,
+      "fill_rate_per_order": 0.27238600988829886,
+      "pnl": 5838.5,
+      "pnl_error": 478.0
+     },
+     "queue_proportional": {
+      "filled_qty": 5434,
+      "fill_error_pct": -0.27527986786566344,
+      "overfill_qty": 29,
+      "underfill_qty": 44,
+      "mae_qty_per_order": 0.006683757553561619,
+      "fill_rate_per_order": 0.2747665262772386,
+      "pnl": 6120.0,
+      "pnl_error": 759.5
+     }
+    }
+   }
+  ]
+ }
+}
